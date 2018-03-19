@@ -59,13 +59,13 @@ A few things are going on here:
 * It defines a service called “web”, which uses the image built from the Dockerfile in the current directory.
 * It overrides the command specified in the Dockerfile to enable the remote debugging feature built into Node.js. We do that here because when you ship this application’s container image to production, you don’t want the debugger enabled – it’s a development-only override.
 * It overwrites the application code in the container by mounting the current directory as a volume. This means that the code inside the running container will update whenever you update the local files on your hard drive. This is very useful, as it means you don’t have to rebuild the image every time you make a change to the application.
-* It maps port 9999 inside the container to port 8000 on localhost, so you can actually visit the application.
+* It maps port 9999 inside the container to port 9999 on localhost, so you can actually visit the application.
 * Finally, it maps port 5858 inside the container to the same port on localhost, so you can connect to the remote debugger.
 
 
 ### Run the app
 
-Using your terminal, navigate to the *app* directory (where the docker-compose.yml file is located) and start up the application:
+Using your terminal, navigate to the directory (where the docker-compose.yml file is located) and start up the application:
 
 ```
 $ docker-compose up
@@ -102,7 +102,7 @@ Create a boilerplate debugger config by clicking the gear icon and selecting “
 
 ![Image of VS Code dropdown list](images/3_.png "Image of Visual Studio Code dropdown list")
 
-A JSON file will be created and displayed (on the filesystem this file is located at *app/.vscode/launch.json*). Replace its contents with the following 
+A JSON file will be created and displayed (on the filesystem this file is located at *.vscode/launch.json*). Replace its contents with the following 
 
 ```
 {
