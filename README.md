@@ -86,16 +86,19 @@ web_1  | HTTP server listening on port 80
 
 The app is now running. Open up [http://localhost:9999/](http://localhost:9999) to see it in action, and take a moment to appreciate the poetry.
 
+![Image of VS Code with debugger](images/0_.png "Image web http://localhost:9999")
+
+
 It’s undoubtedly beautiful, but the problem is obvious: we’re outputting a blank message at the end before cycling back to the first line. It’s time to debug.
 
 ### Start debugging
 Open up the app directory in VSCode. Head over to the debugger by clicking the bug icon in the left-hand sidebar.
 
-![Image of VS Code with debugger icon highlighted](images/1_.png "Image of Visual Studio Code with debugger icon highlighted")
+![Image of VS Code with debugger](images/1_.png "Image of Visual Studio Code with debugger icon highlighted")
 
 Create a boilerplate debugger config by clicking the gear icon and selecting “Node.js” in the dropdown.
 
-![Image of VS Code with gear icon highlighted](images/2_.png "Image of Visual Studio Code with gear icon highlighted")
+![Image of VS Code with gear ](images/2_.png "Image of Visual Studio Code with gear icon highlighted")
 
 ![Image of VS Code dropdown list](images/3_.png "Image of Visual Studio Code dropdown list")
 
