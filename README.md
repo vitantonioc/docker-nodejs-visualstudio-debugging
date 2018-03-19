@@ -1,4 +1,4 @@
-# docker-nodejs-visualstudio-debugging
+# docker-nodejs-visualstudiocode-debugging
 ### Pre-requisites
 
 * [Docker for OSX, Docker for Windows, or Docker for Linux](https://www.docker.com/products/docker)
