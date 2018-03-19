@@ -91,13 +91,13 @@ It’s undoubtedly beautiful, but the problem is obvious: we’re outputting a b
 ### Start debugging
 Open up the app directory in VSCode. Head over to the debugger by clicking the bug icon in the left-hand sidebar.
 
-![Image of VS Code with debugger icon highlighted](images/1.png "Image of Visual Studio Code with debugger icon highlighted")
+![Image of VS Code with debugger icon highlighted](images/1_.png "Image of Visual Studio Code with debugger icon highlighted")
 
 Create a boilerplate debugger config by clicking the gear icon and selecting “Node.js” in the dropdown.
 
-![Image of VS Code with gear icon highlighted](images/2.png "Image of Visual Studio Code with gear icon highlighted")
+![Image of VS Code with gear icon highlighted](images/2_.png "Image of Visual Studio Code with gear icon highlighted")
 
-![Image of VS Code dropdown list](images/3.png "Image of Visual Studio Code dropdown list")
+![Image of VS Code dropdown list](images/3_.png "Image of Visual Studio Code dropdown list")
 
 A JSON file will be created and displayed (on the filesystem this file is located at *app/.vscode/launch.json*). Replace its contents with the following 
 
@@ -127,10 +127,10 @@ There are three important changes here:
 * `remoteRoot` is set to the path of the code directory inside the container, because it’s almost certainly different than the path to the code on your machine.
 
 With the “Attach” config selected, click the “play” button to start the debugger.
-![Image of VS Code attach icon](images/4.png "Image of Visual Studio Code attach icon")
+![Image of VS Code attach icon](images/4_.png "Image of Visual Studio Code attach icon")
 
 Now go back to app.js and find the line that reads `lineIndex += 1` line, just after we initialize the `message` variable. Set a breakpoint by clicking in the gutter, just to the left of the line number.
-![Image of VS Code breakpoint](images/5.png "Image of Visual Studio Code breakpoint")
+![Image of VS Code breakpoint](images/5_.png "Image of Visual Studio Code breakpoint")
 
 If your browser window is still open and refreshing, in a second or two you should see it hit the breakpoint. If not, go back and refresh it – VSCode will pop back to the front as soon as the debugger hits it.
 
